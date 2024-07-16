@@ -1,134 +1,88 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f7;
-    color: #1d1d1f;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #e1e1e1;
-    padding: 0 20px;
+    background-color: #0073e6;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
 }
 
-
-
-header nav ul {
+nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: flex;    
-    text-align: center;
-    height: 50px;
+    margin: 0;
 }
 
-header nav ul li {
-    text-align: center;
+nav ul li {
     display: inline;
-    margin-right: 2%;
+    margin: 0 1em;
 }
 
-header nav ul li a {
-    color: #1d1d1f;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 14px;
-    text-align: center;
-}
-
-header nav ul li a:hover {
-    color: #0071e3;
 }
 
 main {
+    padding-bottom: 3em; /* Ensure main content has enough space at the bottom */
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
     max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 40px;
-}
-
-#support h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#support p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.faq {
-    margin-bottom: 20px;
-}
-
-.faq-question {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.faq-question span {
-    flex: 1;
-    font-weight: 600;
-}
-
-.faq-toggle {
-    background: none;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 10px;
-    cursor: pointer;
-    color: #0071e3;
-}
-
-.faq-answer {
-    display: none;
-    margin-top: 10px;
-}
-
-#privacy-policy h1 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#privacy-policy h4 {
-    text-align: center;
-}
-
-#privacy-policy h3 {
-    text-align: center;
-}
-#privacy-policy p {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #f8f8f8;
-    color: #6e6e73;
+    background-color: #0073e6;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
+    padding: 1em 0;
+    position: relative; /* Change position to relative */
     width: 100%;
-    bottom: 0;
 }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
